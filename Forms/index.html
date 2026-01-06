@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>family details form</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body bgcolor="skyblue">
+    <center><h1> Your Details form</h1></center><br>
+    <form action="submit.html" method="post">
+        <div>
+            <label for="username"><b>Enter your name</b></label>
+            <input type="text" name="username"  id="username" value="xyz"  placeholder="Enter your name">
+        </div>
+        <div>
+            <label for="number"><b> Enter your phone number</b></label>
+            <input type="number" id="number" name="number" placeholder="eg.9860.....">
+        </div>
+        <div>
+            <label for="email"><b> Enter your email address</b></label>
+            <input type="email" id="email" name="email" placeholder="eg.abc@gmail.com" required>
+        </div>
+        <div>
+            <label for="gender"><b>Gender</b></label>
+            <input type="radio" id="gender" name="gender" value="male" required> Male
+            <input type="radio" id="gender" name="gender" value="female" required> female
+            <input type="radio" id="gender" name="gender" value="other" required> Other
+        </div>
+        <div>
+            <label for="members"><b>Total members in family including yourself</b></label>
+            <select id="members" name="family members" required>
+                <option value="1">1</option>
+                <option value="2">3</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="More than 5">More than 5</option>
+              </select>
+        </div>
+        <div>
+                <label for="hobbies"><b>Select your hobbies:</b>
+                <input type="checkbox" id="hobbies" name="hobby" value="reading"> Reading</label>
+                <label><input type="checkbox" name="hobby" value="traveling"> Traveling</label>
+                <label><input type="checkbox" name="hobby" value="sports"> Sports</label>
+              
+        </div>
+        <div>
+            <label> <b> About yourself....</b></label>
+            <textarea name="info" rows="10" cols="50" placeholder="My name is....." required></textarea>
+        </div>
+        <div>
+            <label><b>Select color </b>
+                <input type="color" value="#RRGGBB">
+            </label>
+        </div>
+        <div>
+            <label><b> BOD</b>
+                <input type="date" name="BOD">
+            </label>
+        </div>
+        <div>
+            <label><b> Favourite Week</b>
+                <input type="week" name="BOD">
+            </label>
+        </div>
+        <div>
+            <label><b>search</b>
+                <input type="search" name="search">
+            </label>
+        </div>
+        <div>
+            <label>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </label>
+</div>
+
+    </form>
+</body>
+</html>

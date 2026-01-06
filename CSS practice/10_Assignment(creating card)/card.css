@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+CA:wght@100..400&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sevillana&display=swap');
+
+
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family: "Playwrite CA", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background: radial-gradient(circle, #2e1387, #6b62ae);
+
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 30px;
+  flex-wrap: wrap; /* allows content to move to next line if small screen */
+  background:linear-gradient(rgb(103, 42, 217),rgb(158, 133, 212));
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25); 
+}
+
+.title {
+  font-size: clamp(1.5rem, 5vw, 3rem); /* scales with screen size */
+  margin: 0;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.grid{
+  display: grid;
+  margin: auto ;
+  padding: 2rem 4rem;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border: 5px rgb(8, 16, 91) solid;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth animation */
+}
+
+.card:hover {
+  transform: scale(1.05); /* pop out */
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3); /* deeper shadow */
+}
+
+
+
+.card > p {
+  padding: 20px;
+}
+.card > img {
+  width: 80%;            /* almost full width of card */
+  height: auto;          /* keeps proportion */
+  margin: 20px auto;     /* centers with margin top & bottom */
+  display: block;
+  border-radius: 15px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-footer {
+  display: flex;                   /* use flexbox */
+  justify-content: center;         /* center horizontally */
+  align-items: center;             /* align vertically */
+  gap: 20px;                       /* space between buttons */
+  margin: 20px 0;                  /* top-bottom spacing */
+}
+
+
+.icons img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin-left: 10px;
+}
+
+.button{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  display: flex;
+  justify-content: space-around;
+  background: #d0dad9;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-right: 10px;
+  width: 150px;
+}
+
+.icons2 img {
+  max-width: 50px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.button:hover{
+  background: #9b9ba4;
+}
+
+.wholecard {
+  height: auto;
+  width: 70%;
+  margin: 50px auto;   /* auto left-right centers it */
+  display: block;
+  box-shadow: 20px 20px 20px rgba(0.25, 0.25, 0.25, 0.25); 
+}

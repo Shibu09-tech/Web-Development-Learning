@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Sevillana&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-content{
+    background: linear-gradient(to right, purple,yellow);
+    padding: 20px;
+}
+
+.nav-content ul{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-content .div-cont{
+   display: flex;
+   align-items: center;
+   gap: 15px;
+
+}
+
+.logo{
+  border-radius: 180px;
+  height: 80px;
+  object-fit: cover;
+ box-shadow: 10px 5px 5px black;
+}
+
+.nav-content h1{
+    font-family: "Sevillana", cursive;
+    font-size: 40px;
+    font-style: italic;
+}
+
+h2{
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
