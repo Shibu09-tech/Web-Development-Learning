@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node index.js"
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
   },
   "keywords": [
     "udemy",
@@ -17,6 +18,11 @@
   "author": "Shibu Rai",
   "license": "ISC",
   "devDependencies": {
+    "nodemon": "^3.1.11",
     "prettier": "3.8.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1"
   }
 }
